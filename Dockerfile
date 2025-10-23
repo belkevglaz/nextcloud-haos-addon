@@ -10,10 +10,10 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
 
 # Change the root folder for Nextcloud to the /share directory to be persistent
-# RUN  sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/sites-enabled/000-default.conf \
-#   && sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/apache2.conf \
-#   && sed -i "s|/var/www/html|/share/nextcloud/html|g" /entrypoint.sh \
-#  && sed -i "s|/var/www/html|/share/nextcloud/html|g" /usr/src/nextcloud/config/autoconfig.php
+ RUN  sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/sites-enabled/000-default.conf \
+   && sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/apache2.conf \
+   && sed -i "s|/var/www/html|/share/nextcloud/html|g" /entrypoint.sh \
+  && sed -i "s|/var/www/html|/share/nextcloud/html|g" /usr/src/nextcloud/config/autoconfig.php
 
 RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
 
@@ -36,13 +36,13 @@ LABEL \
   io.hass.arch="${BUILD_ARCH}" \
   io.hass.type="addon" \
   io.hass.version=${BUILD_VERSION} \
-  maintainer="Enrico Deleo <hello@enricodeleo.com>" \
+  maintainer="John Wick <hello@gmail.com>" \
   org.label-schema.description="Nextcloud Home Assistant add-on" \
   org.label-schema.build-date=${BUILD_DATE} \
   org.label-schema.name="Nextcloud" \
   org.label-schema.schema-version="1.0.0" \
-  org.label-schema.url="https://github.com/enricodeleo/hassio-addon-nextcloud" \
-  org.label-schema.usage="https://github.com/enricodeleo/hassio-addon-nextcloud/tree/master/nextcloud/README.md" \
+  org.label-schema.url="https://github.com/belkevglaz/nextcloud-haos-addon" \
+  org.label-schema.usage="https://github.com/belkevglaz/nextcloud-haos-addon/blob/master/README.md" \
   org.label-schema.vcs-ref=${BUILD_REF} \
-  org.label-schema.vcs-url="https://github.com/enricodeleo/hassio-addon-nextcloud/" \
-  org.label-schema.vendor="Enrico Deleo"
+  org.label-schema.vcs-url="https://github.com/belkevglaz/nextcloud-haos-addon/" \
+  org.label-schema.vendor="john Wick"

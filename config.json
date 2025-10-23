@@ -1,6 +1,6 @@
 {
     "name": "Nextcloud 32.0.0",
-    "version": "32.0.0.2",
+    "version": "32.0.0.3",
     "slug": "nextcloud",
     "description": "HomeAssistant addon for self-hosted file share and collaboration platform on the web",
     "startup": "services",
@@ -24,7 +24,7 @@
         "NEXTCLOUD_ADMIN_USER": "hassio",
         "NEXTCLOUD_ADMIN_PASSWORD": "",
         "NEXTCLOUD_TRUSTED_DOMAINS": "homeassistant.local",
-        "NEXTCLOUD_DATADIR": "/share/nextcloud",
+        "NEXTCLOUD_DATADIRECTORY": "/share/nextcloud",
         "TRUSTED_PROXIES": "127.0.0.1 172.30.33.0/24 192.168.1.1"
     },
     "schema": {
@@ -35,7 +35,7 @@
         "NEXTCLOUD_ADMIN_USER": "str",
         "NEXTCLOUD_ADMIN_PASSWORD": "str",
         "NEXTCLOUD_TRUSTED_DOMAINS": "str",
-        "NEXTCLOUD_DATADIR": "str",
+        "NEXTCLOUD_DATADIRECTORY": "str",
         "TRUSTED_PROXIES": "str"
     },
     "arch": [
