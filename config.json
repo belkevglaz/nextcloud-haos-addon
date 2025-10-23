@@ -1,8 +1,8 @@
 {
-    "name": "Nextcloud",
+    "name": "Nextcloud 32.0.0",
     "version": "32.0.0",
     "slug": "nextcloud",
-    "description": "Self-hosted file share and collaboration platform on the web",
+    "description": "HomeAssistant addon for self-hosted file share and collaboration platform on the web",
     "startup": "services",
     "boot": "auto",
     "webui": "http://[HOST]:[PORT:80]",
