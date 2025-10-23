@@ -1,3 +1,4 @@
-## 20.0.11 - 2020-12-14
+## 23.10.2025
 ### Added
-First working release
+- Forked from [hassio-addon-nextcloud](https://github.com/enricodeleo/hassio-addon-nextcloud)
+- Upgraded NextCloud to version `32.0.0`

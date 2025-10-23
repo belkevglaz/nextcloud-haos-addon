@@ -1,0 +1,54 @@
+# Gradle
+.gradle/
+build/
+out
+logs
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# lombok auto generated
+lombok.config
+
+#
+*-example.yaml
+Chart.lock
+.helm/charts/
+
+## Customs ignore
+/.kotlin/
+/examples/http-client.private.env.json
+/src/main/resources/application-dev.properties
+/src/main/resources/application-default.properties
+/src/main/resources/application-prod.properties
+/src/main/resources/application-*.properties
+
+##
+/.github/workflows/
