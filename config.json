@@ -24,6 +24,7 @@
         "NEXTCLOUD_ADMIN_USER": "hassio",
         "NEXTCLOUD_ADMIN_PASSWORD": "",
         "NEXTCLOUD_TRUSTED_DOMAINS": "homeassistant.local",
+        "NEXTCLOUD_DATA_DIR": "/share/nextcloud",
         "TRUSTED_PROXIES": "127.0.0.1 172.30.33.0/24 192.168.1.1"
     },
     "schema": {
@@ -34,6 +35,7 @@
         "NEXTCLOUD_ADMIN_USER": "str",
         "NEXTCLOUD_ADMIN_PASSWORD": "str",
         "NEXTCLOUD_TRUSTED_DOMAINS": "str",
+        "NEXTCLOUD_DATA_DIR": "str",
         "TRUSTED_PROXIES": "str"
     },
     "arch": [
